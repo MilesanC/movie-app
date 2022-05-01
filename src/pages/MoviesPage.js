@@ -20,7 +20,6 @@ const MoviesPage = () => {
       fetch(`https://imdb-api.com/en/API/SearchMovie/k_1egcl85r/${inputValue}`)
         .then((respons) => respons.json())
         .then((data) => {
-          console.log(data);
           setMovieData(data.results);
           setError(data.errorMessage);
           if (data.results) {
@@ -33,8 +32,6 @@ const MoviesPage = () => {
     }, 500);
     return () => clearTimeout(timeOutId);
   }, [inputValue]);
-
-  console.log(movieData);
 
   return (
     <div>
