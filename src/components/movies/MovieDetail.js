@@ -12,7 +12,6 @@ const MovieDetail = () => {
     fetch(`https://imdb-api.com/en/API/Title/k_1egcl85r/${params.movieId}`)
       .then((respons) => respons.json())
       .then((data) => {
-        console.log(data);
         setMovieDetail(data);
       });
   }, [params.movieId]);
