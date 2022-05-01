@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  margin-top: 3rem;
+}
+
+.container img {
+  width: 22rem;
+  max-height: 32rem;
+}
+
+.plot{
+    padding: 1rem 2.5rem;
+    font-size: 1.5rem;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(56, 56, 56);
+  padding: 0 3rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.head p {
+  color: rgb(199, 199, 199);
+}
+
+.title span {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title h1 {
+  font-size: 3rem;
+  color: rgb(255, 238, 50);
+  margin: 0;
+  max-width: 25rem;
+}
+
+.star {
+  color: gold;
+  margin: 0 0.5rem;
+}
